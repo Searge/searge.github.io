@@ -84,6 +84,14 @@
                      .text(str).appendTo(List);
                 }
             });
+            $(document).on('click','.tdItem', function(e){
+                // знаходимо задачу по якій клікнули
+                var jet = $(e.target);
+                // забираємо її з пам'яті
+                localStorage.removeItem(jet.attr('data-itemid'));
+                // та списку
+                jet.remove();
+            })
         </script>
     </body>
 </html>

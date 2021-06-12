@@ -895,6 +895,12 @@ a {
 .w3-panel {
   padding: 0.01em 16px;
 }
+.w3-container {
+  background-color: #000;
+  background-image: url('../images/sebastian-huber-utlvQwm2t3w.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .w3-panel {
   margin-top: 16px;
   margin-bottom: 16px;

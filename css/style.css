@@ -1,13 +1,12 @@
-body,
-h1 {
+body {
   font-family: 'Raleway', sans-serif;
+  background-color: #000;
 }
 body,
 html {
   height: 100%;
 }
 .bgimg {
-  background-color: #000;
   background-image: url('../images/sebastian-huber-utlvQwm2t3w.jpg');
   min-height: 100%;
   background-position: center;

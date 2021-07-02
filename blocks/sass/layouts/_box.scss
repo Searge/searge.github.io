@@ -1,0 +1,39 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.41), 0px 2px 3px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-color: $primary-text;
+
+  @media screen and (max-width: 480px) {
+    max-width: 1200px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 15px;
+  }
+
+  &__item {
+    max-width: 270px;
+
+    background-color: $content-bg;
+    box-shadow: 0 10px 20px -15px black;
+    border-radius: 20px;
+    padding: 2%;
+    padding-bottom: 2%;
+  }
+
+  &__thumb {
+    flex-basis: 100w;
+  }
+
+  &__description {
+    flex-basis: 100w;
+  }
+}

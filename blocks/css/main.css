@@ -189,6 +189,14 @@ img {
   background-color: #485a6c;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -219,7 +227,7 @@ img {
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -243,7 +251,7 @@ img {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .box__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);

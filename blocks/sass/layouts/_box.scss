@@ -2,8 +2,14 @@
   padding: 50px 15px;
   background-color: $primary-text;
 
+  @include respond-from-min('mobile') {
+    max-width: getWidth('tablet');
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include respond-from-min('desktop') {
-    max-width: 1200px;
+    max-width: getWidth('desktop');
     margin-top: 24px;
     margin-bottom: 24px;
     margin-left: auto;
@@ -31,7 +37,7 @@
   margin: 0;
   padding: 0;
 
-  @include respond-from-min('tablet') {
+  @include respond-from-min('mobile') {
     display: flex;
     flex-wrap: wrap;
 
@@ -50,7 +56,7 @@
       margin-top: $box-item-gap;
     }
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min('mobile') {
       flex-basis: flexElementWidth($box-item-gap, 2);
       margin-left: $box-item-gap;
       margin-top: $box-item-gap;

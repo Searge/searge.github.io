@@ -34,10 +34,13 @@
 }
 
 .box {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 
-  @include respond-from-min('mobile') {
+  max-width: getWidth('mobile');
+
+  @include respond-from-min('tablet') {
     display: flex;
     flex-wrap: wrap;
 
@@ -56,7 +59,7 @@
       margin-top: $box-item-gap;
     }
 
-    @include respond-from-min('mobile') {
+    @include respond-from-min('tablet') {
       flex-basis: flexElementWidth($box-item-gap, 2);
       margin-left: $box-item-gap;
       margin-top: $box-item-gap;

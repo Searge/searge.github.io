@@ -1,15 +1,11 @@
 .container {
-  margin-top: 24px;
-  margin-bottom: 24px;
   padding: 50px 15px;
   background-color: $primary-text;
 
-  @media screen and (max-width: 480px) {
+  @include respond-from-min('desktop') {
     max-width: 1200px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    max-width: 1200px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
 
@@ -32,15 +28,16 @@
 }
 
 .box {
-  display: flex;
-  flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: 1024px) {
-    margin-left: -30px;
-    margin-top: -30px;
+  @include respond-from-min('tablet') {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: negativeMargin($box-item-gap);
+    margin-top: negativeMargin($box-item-gap);
+    // flex-basis: calc((100% - #{$box-item-gap} * 4) / 4);
   }
 
   &__item {
@@ -49,19 +46,24 @@
     border-radius: 20px;
     overflow: hidden;
 
-    @media screen and (min-width: 1200px) {
-      flex-basis: calc(100% / 4 - 30px);
-      margin-left: 30px;
-      margin-top: 30px;
+    &:not(:first-child) {
+      margin-top: $box-item-gap;
+    }
+
+    @include respond-from-min('tablet') {
+      flex-basis: flexElementWidth($box-item-gap, 2);
+      margin-left: $box-item-gap;
+      margin-top: $box-item-gap;
+    }
+
+    @include respond-from-min('desktop') {
+      flex-basis: flexElementWidth($box-item-gap, 4);
+      margin-left: $box-item-gap;
+      margin-top: $box-item-gap;
     }
   }
 
-  &__thumb {
-    flex-basis: 100w;
-  }
-
   &__description {
-    flex-basis: 100w;
     padding: 10px;
   }
 }

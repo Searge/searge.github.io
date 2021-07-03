@@ -185,21 +185,15 @@ img {
 }
 
 .container {
-  margin-top: 24px;
-  margin-bottom: 24px;
   padding: 50px 15px;
   background-color: #485a6c;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    max-width: 1200px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.41), 0px 2px 3px -2px rgba(0, 0, 0, 0.3);
@@ -221,19 +215,19 @@ img {
 }
 
 .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .box {
-    margin-left: -30px;
-    margin-top: -30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
   }
 }
 
@@ -245,6 +239,19 @@ img {
   overflow: hidden;
 }
 
+.box__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .box__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .box__item {
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
@@ -254,14 +261,7 @@ img {
   }
 }
 
-.box__thumb {
-  -ms-flex-preferred-size: 100w;
-      flex-basis: 100w;
-}
-
 .box__description {
-  -ms-flex-preferred-size: 100w;
-      flex-basis: 100w;
   padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */

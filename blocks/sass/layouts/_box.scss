@@ -1,9 +1,7 @@
-.box {
-  display: flex;
-  flex-wrap: wrap;
-
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.41), 0px 2px 3px -2px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
+.container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 50px 15px;
   background-color: $primary-text;
 
   @media screen and (max-width: 480px) {
@@ -14,19 +12,48 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    padding: 15px;
+
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.41), 0px 2px 3px -2px rgba(0, 0, 0, 0.3);
+    // border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $primary-bg;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: -30px;
+    margin-top: -30px;
   }
 
   &__item {
-    max-width: 270px;
-
     background-color: $content-bg;
     box-shadow: 0 10px 20px -15px black;
     border-radius: 20px;
-    padding: 2%;
-    padding-bottom: 2%;
+    overflow: hidden;
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
   }
 
   &__thumb {
@@ -35,5 +62,6 @@
 
   &__description {
     flex-basis: 100w;
+    padding: 10px;
   }
 }

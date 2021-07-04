@@ -238,6 +238,14 @@ img {
         flex-wrap: wrap;
     margin-left: calc(-1 * 30px);
     margin-top: calc(-1 * 30px);
+    margin-right: 0;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    max-width: 1200px;
   }
 }
 

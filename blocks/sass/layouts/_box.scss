@@ -46,7 +46,12 @@
 
     margin-left: negativeMargin($box-item-gap);
     margin-top: negativeMargin($box-item-gap);
-    // flex-basis: calc((100% - #{$box-item-gap} * 4) / 4);
+    margin-right: 0;
+    max-width: getWidth('tablet')
+  }
+
+  @include respond-from-min('desktop') {
+    max-width: getWidth('desktop')
   }
 
   &__item {

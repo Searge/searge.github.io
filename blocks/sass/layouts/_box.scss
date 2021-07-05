@@ -61,19 +61,19 @@
     overflow: hidden;
 
     &:not(:first-child) {
-      margin-top: $box-item-gap;
+      margin-top: $team-item-gap;
     }
 
     @include respond-from-min('tablet') {
-      flex-basis: flexElementWidth($box-item-gap, 2);
-      margin-left: $box-item-gap;
-      margin-top: $box-item-gap;
+      flex-basis: flexElementWidth($team-item-gap, 2);
+      margin-left: $team-item-gap;
+      margin-top: $team-item-gap;
     }
 
     @include respond-from-min('desktop') {
-      flex-basis: flexElementWidth($box-item-gap, 4);
-      margin-left: $box-item-gap;
-      margin-top: $box-item-gap;
+      flex-basis: flexElementWidth($team-item-gap, 4);
+      margin-left: $team-item-gap;
+      margin-top: $team-item-gap;
     }
   }
 

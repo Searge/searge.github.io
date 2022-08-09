@@ -1,2 +1,10 @@
-node_modules/*
-package-lock.json
+node_modules
+
+.DS_Store
+
+dist/*
+!dist/.gitkeep
+
+cdk/cdk.out
+cdk/**/*.js
+cdk/**/*.d.ts

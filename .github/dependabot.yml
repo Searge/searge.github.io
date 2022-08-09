@@ -1,0 +1,25 @@
+﻿version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/.github"
+    schedule:
+      interval: "monthly"
+    labels:
+      - "github-actions"
+    commit_message:
+      prefix: "Actions: "
+      include: scope
+
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    labels:
+      - "js-dependency"
+      - "js-dependency-dev"
+    commit-message:
+      prefix: "NPMS: "
+      include: scope
+      exclude:
+        - "package-lock.json"

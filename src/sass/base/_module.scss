@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $primary-color-light;
+  color: $primary-color;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  @include responsive-font($main-size, $main-size-mobile);
+  line-height: 1.33;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+@import "./reset";
+@import "./section";

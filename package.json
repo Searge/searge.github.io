@@ -1,8 +1,39 @@
 {
-  "dependencies": {
-    "normalize.css": "^8.0.1"
+  "name": "minwiz",
+  "version": "0.0.1",
+  "description": "MinWiz - Minimal starter kit for under 2 KB sites",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp",
+    "minifyImg": "npx gulp image",
+    "lint": "eslint . --ignore-path ./.gitignore",
+    "deploy": "cd cdk && npm run deploy && cd .."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeplia/minwiz.git"
+  },
+  "author": "Zeplia",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/zeplia/minwiz/issues"
+  },
+  "homepage": "https://github.com/zeplia/minwiz#readme",
   "devDependencies": {
-    "prettier": "2.3.1"
+    "del": "^6.0.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.3"
   }
 }

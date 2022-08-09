@@ -1,0 +1,57 @@
+// Responsive design
+// If you want we could use this mixins too
+// https://gist.github.com/davidgilbertson/ad24b42b0eddde2dc6b1b51f9460af11#file-css-breakpoint-mixins-scss
+
+// Style will work only from this breakpoint
+@mixin respond-from-min($breakpoint) {
+  @media screen and (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+// Style will work only to this breakpoint
+@mixin respond-to-max($breakpoint) {
+  @media screen and (max-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+@mixin responsive-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$mobile}) / (#{$desktopPure} - #{$mobilePure})));
+}
+
+@mixin responsive-menu-font($mobSize, $mobSizeS) {
+  $addSize: $mobSize - $mobSizeS;
+
+  font-size: calc(#{$mobSizeS + px} + #{$addSize} * ((100vw - #{$mobileS}) / (#{$mobilePure} - #{$mobilePureS})));
+}
+
+@mixin retina($image, $width: 'false', $gradient: 'false') {
+  @if $width != 'false' and $gradient != 'false' {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $width),
+      screen and (min-resolution: 192dpi) and (min-width: $width),
+      screen and (min-resolution: 2dppx) and (min-width: $width) {
+      background-image: $gradient, url($image);
+    }
+  } @else if $width != 'false' and $gradient == 'false' {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: $width),
+      screen and (min-resolution: 192dpi) and (min-width: $width),
+      screen and (min-resolution: 2dppx) and (min-width: $width) {
+      background-image: url($image);
+    }
+  } @else if $width == 'false' and $gradient == 'false' {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url($image);
+    }
+  } @else if $width == 'false' and $gradient != 'false' {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: $gradient, url($image);
+    }
+  }
+}

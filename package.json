@@ -1,7 +1,13 @@
 {
-  "name": "minwiz",
-  "version": "0.0.1",
-  "description": "MinWiz - Minimal starter kit for under 2 KB sites",
+  "name": "searge-github-io",
+  "version": "0.0.2",
+  "description": "Personal website for Searge",
+  "keywords": [
+    "homepage",
+    "pug",
+    "sass"
+  ],
+  "private": true,
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp",
@@ -11,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeplia/minwiz.git"
+    "url": "git+https://github.com/Searge/searge.github.io.git"
   },
-  "author": "Zeplia",
+  "author": "Searge",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/zeplia/minwiz/issues"
+    "url": "https://github.com/Searge/searge.github.io/issues"
   },
-  "homepage": "https://github.com/zeplia/minwiz#readme",
+  "homepage": "https://github.com/Searge/searge.github.io#readme",
   "devDependencies": {
     "del": "^7.0.0",
     "eslint": "^8.21.0",
@@ -35,5 +41,10 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.54.4"
-  }
+  },
+  "engines": {
+    "node": ">= 16.13.0",
+    "npm": ">= 7.19.0"
+  },
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
 }

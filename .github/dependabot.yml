@@ -8,7 +8,7 @@ updates:
       interval: "monthly"
     labels:
       - "github-actions"
-    commit_message:
+    commit-message:
       prefix: "Actions: "
       include: scope
 
@@ -22,7 +22,6 @@ updates:
       - "js-dependency"
       - "js-dependency-dev"
     commit-message:
-      prefix: "NPMS: "
+      # Prefix all commit messages with "npm"
+      prefix: "npm"
       include: scope
-      exclude:
-        - "package-lock.json"

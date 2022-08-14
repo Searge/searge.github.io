@@ -11,6 +11,9 @@ body {
   font-weight: 500;
   @include responsive-font($main-size, $main-size-mobile);
   line-height: 1.33;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   &.modal-open {
     overflow: hidden;

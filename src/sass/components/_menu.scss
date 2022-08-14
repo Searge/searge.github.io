@@ -1,0 +1,26 @@
+.menu {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  @include respond-from-min($tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+
+    width: 100vw;
+  }
+  // Site Navigation Menu Block
+  &__list {
+    @include respond-from-min($tablet) {
+      display: flex;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+    @include respond-from-min($tablet) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+}

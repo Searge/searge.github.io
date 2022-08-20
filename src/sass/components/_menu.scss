@@ -1,31 +1,44 @@
 .header {
   display: flex;
-  // justify-content: space-between;
   align-items: stretch;
+  height: 56pt;
+  @include respond-from-min($desktopMax) {
+    width: $desktopMax;
+    margin: 0 auto;
+  }
 }
 
 .logo {
   display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-  width: 144pt;
-  height: 100%;
-  padding: 0;
+  flex: $phi;
+  align-items: stretch;
   margin: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
+
+  &__link {
+    display: block;
+    padding: 13px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__fig {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $logo-height;
+    width: $logo-height + ($logo-height * $phi);
+    padding: 0;
+    margin: 0;
+  }
 
   &__img {
-    width: 36pt;
-    height: 36pt;
+    width: $logo-height;
+    height: $logo-height;
   }
-  
+
   &__content {
     display: block;
-    width: 100%;
-
   }
 }
 
@@ -35,27 +48,39 @@
 
   @include respond-from-min($tablet) {
     display: flex;
+    flex: 1;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 90px;
+    align-items: stretch;
 
     width: 100vw;
+  }
+
+  &__search {
+    display: block;
+
+    @include respond-from-min($tablet) {
+      display: flex;
+      flex: 1;
+      padding: 21px 0;
+    }
   }
   // Site Navigation Menu Block
   &__list {
     @include respond-from-min($tablet) {
       display: flex;
+      flex: $phi;
       align-items: stretch;
+      justify-content: space-between;
     }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
+
+  &__item {
+    // margin-bottom: 32px;
+
     @include respond-from-min($tablet) {
-      margin-right: 50px;
+      padding: 21px 0;
       margin-bottom: 0;
     }
   }
 }
-
-

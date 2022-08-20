@@ -1,3 +1,7 @@
+.main {
+  margin-top: 0;
+  position: relative;
+}
 // Wrapper
 .container {
   padding-left: 20px;
@@ -15,14 +19,12 @@
 
     max-width: $tablet;
   }
-
   @include respond-from-min($desktop) {
     max-width: $desktop;
     display: flex;
     flex-direction: row-reverse;
     align-items: stretch;
   }
-
 
   @include respond-from-min($desktopMax) {
     max-width: $desktopMax;

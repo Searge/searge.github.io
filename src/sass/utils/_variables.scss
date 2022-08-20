@@ -3,7 +3,7 @@
 $phi: 1.618;
 $pi: 3.141592653589793;
 
-$logo-height: 36pt;
+$logo-height: 24pt;
 
 // NORD
 $nord0: #2e3440;
@@ -36,6 +36,10 @@ $secondary-color-alpha: rgba(0, 0, 0, 0.9);
 $line-gradient: linear-gradient($primary-color-alpha, $primary-color-alpha);
 $primary-drop-shadow-color: rgba(0, 0, 0, 0.25);
 $secondary-drop-shadow-color: rgba(0, 0, 0, 0.25);
+
+$ternary-bg: #2f303a;
+$medium-dark: 0.4;
+$hero-gradient: rgba($ternary-bg, $medium-dark);
 
 // BREAKPOINTS
 $firstrange: 299px;

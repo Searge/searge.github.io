@@ -14,7 +14,7 @@ body {
   // FONT
   font-family: $main-font;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 
   p,
   ul,
@@ -22,13 +22,14 @@ body {
   pre,
   table,
   blockquote,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  %headings {
     transition: all 200ms ease-in-out;
+  }
+
+  %headings {
+    font-weight: 900;
+    font-variant: small-caps;
+    font-family: $accent-font;
   }
   code {
     background: #ccc;

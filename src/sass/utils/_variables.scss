@@ -1,5 +1,6 @@
 // Math
-$phi: 1.618033988749895;
+// $phi: 1.618033988749895;
+$phi: 1.618;
 $pi: 3.141592653589793;
 
 $logo-height: 36pt;
@@ -37,6 +38,7 @@ $primary-drop-shadow-color: rgba(0, 0, 0, 0.25);
 $secondary-drop-shadow-color: rgba(0, 0, 0, 0.25);
 
 // BREAKPOINTS
+$firstrange: 299px;
 $mobileS: 320px;
 $mobileBox: 450px;
 $mobile: 480px;

@@ -1,24 +1,77 @@
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
   background: $primary-color-light;
   color: $primary-color;
 
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 500;
-  @include responsive-font($main-size, $main-size-mobile);
-  line-height: 1.33;
+  // TEXT
   text-rendering: optimizeLegibility;
   overflow-wrap: break-word;
   word-break: break-word;
+  // FONT
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+
+  p,
+  ul,
+  ol,
+  pre,
+  table,
+  blockquote,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    transition: all 200ms ease-in-out;
+  }
+  code {
+    background: #ccc;
+    display: inline-block;
+  }
+  pre,
+  code {
+    width: 100%;
+  }
+  pre {
+    margin: 1em;
+  }
 
   &.modal-open {
     overflow: hidden;
   }
 }
 
-@import "./reset";
-@import "./section";
+@import './reset';
+@import './section';
+
+// Ratio
+$ratio: $phi;
+
+// Typography
+@include respond-to-max($firstrange) {
+  @include typography(12px);
+}
+@include respond-from-min($mobileS) {
+  @include typography(14px);
+}
+@include respond-from-min($mobile) {
+  @include typography(15px);
+}
+@include respond-from-min($tabletBox) {
+  @include typography(16px);
+}
+@include respond-from-min($tablet) {
+  @include typography(19px);
+}
+@include respond-from-min($desktop) {
+  @include typography(21px);
+}
+@include respond-from-min($desktopMax) {
+  @include typography(24px);
+}

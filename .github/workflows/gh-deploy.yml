@@ -3,6 +3,7 @@ name: Build-n-Deploy
 on:
   push:
     branches: [main]
+
 permissions:
   contents: write
 

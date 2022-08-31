@@ -5,9 +5,8 @@ header.header
         figure.logo__fig
           object(class="logo__img" data="./img/logo_m.svg", type="image/svg+xml")
           figcaption.logo__content Searge
+
+    - const menuList = {"blog": "./log/", "about": "./#about", }
     nav.menu
-      .menu__search Search
-      ul.menu__list
-        li.menu__item Alpha
-        li.menu__item Beta
-        li.menu__item Gamma
+      .menu__search search
+      +menu

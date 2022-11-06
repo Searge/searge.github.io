@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/searge
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://searge.pp.ua
+  * I am searge (https://keybase.io/searge) on keybase.
+  * I have a public key ASAyKw4YNYyHkz_UUb3tCt_-TTJEIeNWa9pSHpd2qGmfTQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120322b0e18358c87933fd451bded0adffe4d324421e3566bda521e9776a8699f4d0a",
+      "host": "keybase.io",
+      "kid": "0120322b0e18358c87933fd451bded0adffe4d324421e3566bda521e9776a8699f4d0a",
+      "uid": "47917c21fa90d85f795565eabaaa3819",
+      "username": "searge"
+    },
+    "merkle_root": {
+      "ctime": 1667761689,
+      "hash": "ddbcd80f56aedd1ab617c72484dd690dbd3865f22812d636b79150b2a55e0906f1da8f6bdf5fafe055de30dfad77d052075e1866b066e536dda33c75e7466ca7",
+      "hash_meta": "16a3ef60b5e9172b1ec5f082b91a48cb86e9efb484f70f7da8f51d448a6d6a7a",
+      "seqno": 23499567
+    },
+    "service": {
+      "entropy": "7UZxVh/Ape2/DdAIGbU/rgrT",
+      "hostname": "searge.pp.ua",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1667761788,
+  "expire_in": 504576000,
+  "prev": "134b81a9e4a1216842b2abd0b8fa2db50cddce6172610ecd554e5c14b6062477",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMisOGDWMh5M/1FG97Qrf/k0yRCHjVmvaUh6Xdqhpn00Kp3BheWxvYWTESpcCCcQgE0uBqeShIWhCsqvQuPottQzdzmFyYQ7NVU5cFLYGJHfEINTFAJzYz7QHrLBfLOQMcH+gTqdMqCAO/iVtXTq3yDEwAgHCo3NpZ8RAmqzl9GU2rcI1kJrHMx3fj9WAdgivVxIkJJfUp2kUboe0vB/DURZQ7+8RBOtYCngGDmpP3n86j0fPz8iccacmAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIfSX3K2BIfGYQh1Z+l+1W1bzUkkAyPPAZDBfZMbaba2o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/searge
+
+==================================================================

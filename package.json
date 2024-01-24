@@ -52,6 +52,6 @@
     "not ie <= 8"
   ],
   "dependencies": {
-    "esbuild": "0.19.11"
+    "esbuild": "0.19.12"
   }
 }

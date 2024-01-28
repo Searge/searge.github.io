@@ -31,7 +31,6 @@
 	"remoteUser": "node",
 	"features": {
 		"git": "latest",
-		"github-cli": "latest",
-		"fish": "latest"
+		"github-cli": "latest"
 	}
 }

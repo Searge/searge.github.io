@@ -40,7 +40,7 @@
     "gulp-inline-source": "^4.0.0",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.78.0"
+    "sass": "^1.79.1"
   },
   "engines": {
     "node": ">= 16.16.0",

@@ -27,7 +27,7 @@
   "homepage": "https://github.com/Searge/searge.github.io#readme",
   "devDependencies": {
     "del": "^8.0.0",
-    "eslint": "^9.19.0",
+    "eslint": "^9.20.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",

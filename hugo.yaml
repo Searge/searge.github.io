@@ -1,0 +1,76 @@
+# Hugo configuration file
+baseURL: "https://searge.github.io/blog/"
+languageCode: "uk-UA"
+
+title: "@Searge/blog"
+
+params:
+  contact:
+    email: "searge@duck.com"
+
+  # Display the last modification date
+  displayUpdatedDate: true
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+  editURL:
+    enable: true
+    base: "https://github.com/Searge/blog/edit/main/content"
+
+# Parse Git commit
+enableGitInfo: true
+
+# Set default language
+defaultContentLanguage: "uk"
+defaultContentLanguageInSubdir: false
+
+# import hextra as module
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Blog
+      pageRef: /blog
+      weight: 1
+    - name: About
+      pageRef: /about
+      weight: 2
+    - name: Contact ↗
+      url: "https://github.com/Searge"
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/Searge/blog"
+      params:
+        icon: github
+    - name: Mastoodon
+      weight: 6
+      url: "https://twiukraine.com/@Searge"
+      params:
+        icon: mastodon

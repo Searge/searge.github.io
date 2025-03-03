@@ -11,17 +11,3 @@ updates:
     commit-message:
       prefix: "Actions: "
       include: scope
-
-  # Maintain dependencies for npm
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    open-pull-requests-limit: 10
-    labels:
-      - "js-dependency"
-      - "js-dependency-dev"
-    commit-message:
-      # Prefix all commit messages with "npm"
-      prefix: "npm"
-      include: scope

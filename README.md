@@ -1,5 +1,7 @@
 # Personal page and blog for Searge
 
+[![Deploy Hugo site to Pages](https://github.com/Searge/searge.github.io/actions/workflows/pages.yaml/badge.svg)](https://github.com/Searge/searge.github.io/actions/workflows/pages.yaml)
+
 Hello! I'm using [Hextra Starter Template](https://github.com/imfing/hextra-starter-template.git) for Hugo.
 
 ## Local Development

@@ -1,5 +1,5 @@
 # Hugo configuration file
-baseURL: "https://searge.pp.ua/blog/"
+baseURL: "https://searge.pp.ua/"
 languageCode: "uk-UA"
 
 title: "@Searge"
@@ -25,7 +25,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/Searge/edit/master/content"
+    base: "https://github.com/Searge/searge.github.io/edit/master/content"
 
 # Parse Git commit
 enableGitInfo: true

@@ -1,5 +1,5 @@
 # Hugo configuration file
-baseURL: "https://searge.github.io/blog/"
+baseURL: "https://searge.github.io/"
 languageCode: "uk-UA"
 
 title: "@Searge/blog"

@@ -1,8 +1,8 @@
 # Hugo configuration file
-baseURL: "https://searge.github.io/"
+baseURL: "https://searge.pp.ua/blog/"
 languageCode: "uk-UA"
 
-title: "@Searge/blog"
+title: "@Searge"
 
 params:
   contact:
@@ -25,7 +25,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/Searge/blog/edit/main/content"
+    base: "https://github.com/Searge/edit/master/content"
 
 # Parse Git commit
 enableGitInfo: true
@@ -66,7 +66,7 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/Searge/blog"
+      url: "https://github.com/Searge"
       params:
         icon: github
     - name: Mastoodon

@@ -16,14 +16,14 @@ params:
     displayToggle: true
 
   navbar:
-    displayTitle: true
-    displayLogo: false
+    displayTitle: false
+    displayLogo: true
     logo:
       path: images/logo.svg
       dark: images/logo.svg
       link: /
-      width: 34
-      height: 34
+      width: 24
+      height: 24
 
   footer:
     displayCopyright: true

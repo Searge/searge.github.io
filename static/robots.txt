@@ -1,0 +1,34 @@
+# Block Russian crawlers
+User-agent: Yandex
+Disallow: /
+
+User-agent: Mail.RU_Bot
+Disallow: /
+
+User-agent: Rambler
+Disallow: /
+
+User-agent: SputnikBot
+Disallow: /
+
+User-agent: CensysInspect
+Disallow: /
+
+# Block Chinese crawlers
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: 360Spider
+Disallow: /
+
+User-agent: YisouSpider
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: *
+Allow: /

@@ -18,6 +18,12 @@ params:
   navbar:
     displayTitle: true
     displayLogo: false
+    logo:
+      path: images/logo.svg
+      dark: images/logo.svg
+      link: /
+      width: 34
+      height: 34
 
   footer:
     displayCopyright: true
@@ -48,6 +54,11 @@ markup:
   # enable hextra syntax highlight
   highlight:
     noClasses: false
+
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.8
 
 menu:
   main:

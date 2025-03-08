@@ -5,6 +5,7 @@ languageCode: "uk-UA"
 title: "@Searge"
 
 params:
+  subtitle: "Personal Page and Blog"
   contact:
     email: "searge@duck.com"
 

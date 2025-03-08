@@ -8,3 +8,5 @@ comments: false
 
 Hello, I'm Sergij!
 I'm a DevOps engineer from Ukraine.
+
+{{% jupiter "me.ipynb" %}}

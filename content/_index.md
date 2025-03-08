@@ -3,9 +3,11 @@ title:
 toc: false
 ---
 
-![Lutsk](images/lutsk.jpg)
+## Hello, I'm @Searge
 
-Welcome to my blog!
+DevOps engineer from Ukraine. I am proficient in Bash, Python, and Kubernetes maintenance, as well as web servers and network equipment.
+
+![Lutsk](images/lutsk.jpg)
 
 ## Explore
 
@@ -13,7 +15,3 @@ Welcome to my blog!
   {{< card link="blog" title="Blog" icon="book-open" >}}
   {{< card link="about" title="About" icon="user" >}}
 {{< /cards >}}
-
-## Documentation
-
-For more information, visit [Hextra](https://imfing.github.io/hextra).

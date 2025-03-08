@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    aliases:
+      - list
+      - all
+    dir: "{{.USER_WORKING_DIR}}"
+    desc: "task list"
+    summary: |
+      Display all tasks of this projects
+
+    cmds:
+      - task -a
+
+  run:
+    aliases:
+      - run
+    dir: "{{.USER_WORKING_DIR}}"
+    desc: "run task"
+    summary: |
+      Run hugo server on port 1313
+
+    cmds:
+      - hugo server --buildDrafts --disableFastRender -p 1313

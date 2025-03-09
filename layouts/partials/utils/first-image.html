@@ -5,7 +5,7 @@
   {{ $submatches := findRESubmatch $re .Content }}
   {{ if gt (len $submatches) 0 }}
     {{ $src := index (index $submatches 0) 1 }}
-    {{ $src }}
+    {{ $absoluteSrc := absURL $src }}
+    {{ $absoluteSrc }}
   {{ end }}
 {{ end }}
-

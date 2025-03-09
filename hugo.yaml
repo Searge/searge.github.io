@@ -9,6 +9,8 @@ params:
   contact:
     email: "searge@duck.com"
 
+  defaultImage: "android-chrome-512x512.png"
+
   # Display the last modification date
   displayUpdatedDate: true
   theme:

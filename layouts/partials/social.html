@@ -1,0 +1,18 @@
+{{- $socialHeader := T "social" | default "Social" -}}
+
+{{ $socialHeader}}
+{{- $currentPage := . -}}
+{{- range .Site.Menus.social -}}
+  {{- $link := .URL -}}
+  {{- $external := strings.HasPrefix $link "http" -}}
+  {{- with .PageRef -}}
+    {{- if hasPrefix . "/" -}}
+      {{- $link = relLangURL (strings.TrimPrefix "/" .) -}}
+    {{- end -}}
+  {{- end -}}
+    {{- $rel := cond (eq .Params.icon "mastodon") "noreferrer me" "noreferrer" }}
+    <a {{ if $external }}target="_blank" rel="{{ $rel }}"{{ end }} href="{{ $link }}" title="{{ or (T .Identifier) .Name | safeHTML }}">
+      {{- partial "utils/icon.html" (dict "name" .Params.icon "attributes" "height=1rem") -}}
+      <span class="hx-sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
+    </a>
+{{- end -}}

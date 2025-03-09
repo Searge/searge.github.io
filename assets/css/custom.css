@@ -1,0 +1,32 @@
+.footer-information {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    display: flex;
+}
+
+.footer-information li:first-child {
+    margin-left: 0;
+}
+
+.footer-information li {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+.footer-information li + li {
+    border-left: 1px solid #d5d6d8;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+.footer-information .social {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-information .social a {
+    margin-left: .75rem;
+}

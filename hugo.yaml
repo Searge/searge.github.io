@@ -70,19 +70,20 @@ menu:
       pageRef: /about
       weight: 2
     - name: Contact ↗
-      url: "https://github.com/Searge"
+      url: "https://keyoxide.org/36B0B7553AE5A95B"
       weight: 3
     - name: Search
       weight: 4
       params:
         type: search
+  social:
     - name: GitHub
-      weight: 5
+      weight: 1
       url: "https://github.com/Searge"
       params:
         icon: github
     - name: Mastoodon
-      weight: 6
+      weight: 2
       url: "https://twiukraine.com/@Searge"
       params:
         icon: mastodon

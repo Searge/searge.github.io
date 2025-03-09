@@ -1,11 +1,38 @@
+{{/*
+  Regular expression to find the first image in the content.
+  The expression is not very robust, but it's good enough for the
+  purpose of finding the first image.
+*/}}
 {{ $re := `(?i)<img[^>]*?src\s*=\s*['"]([^'"]+)['"]` }}
+{{/*
+  Find the first match of the regular expression in the content.
+  The `findRE` function returns a slice of matches, so we need to
+  check if the length of the slice is greater than 0.
+*/}}
 {{ $matches := findRE $re .Content }}
 {{ if gt (len $matches) 0 }}
+  {{/*
+    Get the first match from the slice of matches.
+  */}}
   {{ $match := index $matches 0 }}
+  {{/*
+    Find the first submatch of the regular expression in the content.
+    The `findRESubmatch` function returns a slice of submatches, so we
+    need to check if the length of the slice is greater than 0.
+  */}}
   {{ $submatches := findRESubmatch $re .Content }}
   {{ if gt (len $submatches) 0 }}
+    {{/*
+      Get the first submatch from the slice of submatches.
+    */}}
     {{ $src := index (index $submatches 0) 1 }}
+    {{/*
+      Make the URL of the first image absolute.
+    */}}
     {{ $absoluteSrc := absURL $src }}
+    {{/*
+      Print the absolute URL of the first image.
+    */}}
     {{ $absoluteSrc }}
   {{ end }}
 {{ end }}

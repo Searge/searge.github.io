@@ -1,3 +1,9 @@
+{{/*
+  Custom head-end.html partial for Hextra.
+  This partial is used to render Open Graph meta tags with the first image
+  found in the page content. The image can be overridden by the ogImage
+  parameter in the page front matter.
+*/}}
 {{ $pageImage := .Params.ogImage }}
 
 {{ if not $pageImage }}
@@ -13,4 +19,7 @@
   <meta name="twitter:image" content="{{ absURL . }}">
 {{ end }}
 
+{{/*
+  Add Open Graph meta tag about the creator for Twitter.
+*/}}
 <meta property="'twitter:creator'" content="@Searge">

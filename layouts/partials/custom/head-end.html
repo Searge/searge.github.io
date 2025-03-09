@@ -1,0 +1,12 @@
+{{ $pageImage := .Params.ogImage }}
+
+{{ if not $pageImage }}
+  {{ $pageImage = partial "utils/first-image.html" . }}
+{{ end }}
+
+{{ with $pageImage }}
+  <meta property="og:image" content="{{ . }}">
+  <meta name="twitter:image" content="{{ . }}">
+{{ end }}
+
+<meta property="'twitter:creator'" content="@Searge">

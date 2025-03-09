@@ -1,0 +1,11 @@
+{{ $re := `(?i)<img[^>]*?src\s*=\s*['"]([^'"]+)['"]` }}
+{{ $matches := findRE $re .Content }}
+{{ if gt (len $matches) 0 }}
+  {{ $match := index $matches 0 }}
+  {{ $submatches := findRESubmatch $re .Content }}
+  {{ if gt (len $submatches) 0 }}
+    {{ $src := index (index $submatches 0) 1 }}
+    {{ $src }}
+  {{ end }}
+{{ end }}
+

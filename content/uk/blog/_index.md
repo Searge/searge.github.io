@@ -1,7 +1,6 @@
 ---
-title: Blog
+title: Останні записи
 cascade:
   type: blog
 ---
 
-Вітаємо у блозі!

@@ -1,7 +1,5 @@
 ---
-title: Blog
+title: Recent posts
 cascade:
   type: blog
 ---
-
-Вітаємо у блозі!

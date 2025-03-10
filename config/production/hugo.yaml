@@ -3,6 +3,14 @@ sitemap:
   filename: sitemap.xml
   priority: 0.8
 
+outputs:
+  home: [html, json]
+  page: [html, rss]
+  rss: [rss]
+  section: [html, rss]
+  taxonomy: [html, rss]
+  term: [html, rss]
+
 services:
   googleAnalytics:
     ID: G-0BLVNDH5W7

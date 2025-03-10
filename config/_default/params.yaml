@@ -1,0 +1,30 @@
+contact:
+  email: "searge@duck.com"
+
+defaultImage: "android-chrome-512x512.png"
+
+# Display the last modification date
+displayUpdatedDate: true
+
+theme:
+  # light | dark | system
+  default: system
+  displayToggle: true
+
+navbar:
+  displayTitle: false
+  displayLogo: true
+  logo:
+    path: images/logo.svg
+    dark: images/logo.svg
+    link: /
+    width: 24
+    height: 24
+
+footer:
+  displayCopyright: true
+  displayPoweredBy: true
+
+editURL:
+  enable: true
+  base: "https://github.com/Searge/searge.github.io/edit/master/content"

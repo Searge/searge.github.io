@@ -1,0 +1,8 @@
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.8
+
+services:
+  googleAnalytics:
+    ID: G-0BLVNDH5W7

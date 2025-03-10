@@ -1,0 +1,16 @@
+uk:
+  weight: 1
+  contentDir: "content/uk"
+  languageCode: "uk-UA"
+  languageName: "Українська"
+  timeZone: "Europe/Kyiv"
+  params:
+    subtitle: "Персональна Сторінка та Блог"
+en:
+  weight: 2
+  contentDir: "content/en"
+  languageCode: "en-US"
+  languageName: "English"
+  timeZone: "GMT"
+  params:
+    subtitle: "Personal Page and Blog"

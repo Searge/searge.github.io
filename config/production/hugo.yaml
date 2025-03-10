@@ -4,12 +4,12 @@ sitemap:
   priority: 0.8
 
 outputs:
-  home: [html, json]
-  page: [html, rss]
-  rss: [rss]
-  section: [html, rss]
-  taxonomy: [html, rss]
-  term: [html, rss]
+  home: ['html']
+  page: ['html']
+  rss: ['rss']
+  section: ['html']
+  taxonomy: ['html']
+  term: ['html']
 
 services:
   googleAnalytics:

@@ -31,4 +31,6 @@ User-agent: MJ12bot
 Disallow: /
 
 User-agent: *
-Allow: /
+Disallow:
+
+Sitemap: https://searge.pp.ua/sitemap.xml

@@ -30,9 +30,6 @@ Disallow: /
 User-agent: MJ12bot
 Disallow: /
 
-User-agent: *
-Disallow:
-
 # Strange bots
 User-agent: YouBot
 Disallow: /
@@ -42,5 +39,8 @@ User-agent: Omgilibot
 Disallow: /
 User-agent: Omgili
 Disallow: /
+
+User-agent: *
+Allow: /
 
 Sitemap: https://searge.pp.ua/sitemap.xml

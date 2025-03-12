@@ -33,4 +33,14 @@ Disallow: /
 User-agent: *
 Disallow:
 
+# Strange bots
+User-agent: YouBot
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Omgili
+Disallow: /
+
 Sitemap: https://searge.pp.ua/sitemap.xml

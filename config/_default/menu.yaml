@@ -33,3 +33,8 @@ social:
     url: "https://www.linkedin.com/in/searge/"
     params:
       icon: linkedin
+  - name: RSS
+    weight: 4
+    url: "https://feeds.feedburner.com/searge/blog-ua"
+    params:
+      icon: rss

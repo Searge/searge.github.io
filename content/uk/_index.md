@@ -1,6 +1,6 @@
 ---
-title: @Searge
-description: DevOps engineer from Ukraine
+title: '@Searge'
+description: 'DevOps engineer from Ukraine'
 toc: false
 ---
 

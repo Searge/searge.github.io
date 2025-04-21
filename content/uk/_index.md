@@ -1,11 +1,12 @@
 ---
-title:
+title: @Searge
+description: DevOps engineer from Ukraine
 toc: false
 ---
 
-## Hello, I'm @Searge
+# Привіт, я @Searge
 
-DevOps engineer from Ukraine. I am proficient in Bash, Python, and Kubernetes maintenance, as well as web servers and network equipment.
+DevOps з України. Маю досвід роботи з Bash, Python, а також з обслуговуванням веб-серверів, мережевого обладнання та Kubernetes.
 
 ![Lutsk](images/lutsk.jpg)
 

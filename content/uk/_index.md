@@ -1,12 +1,12 @@
 ---
-title: '@Searge'
+title: 'Привіт, я @Searge'
 description: 'DevOps engineer from Ukraine'
 toc: false
 ---
 
-# Привіт, я @Searge
+## DevOps з України
 
-DevOps з України. Маю досвід роботи з Bash, Python, а також з обслуговуванням веб-серверів, мережевого обладнання та Kubernetes.
+Маю досвід роботи з Bash, Python, а також з обслуговуванням веб-серверів, мережевого обладнання та Kubernetes.
 
 ![Lutsk](images/lutsk.jpg)
 

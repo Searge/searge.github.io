@@ -1,7 +1,7 @@
 # Hugo configuration file
 baseURL: "https://searge.pp.ua/"
 
-title: "@Searge"
+title: "@Searge | Home"
 
 # import hextra as module
 module:
